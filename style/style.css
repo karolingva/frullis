@@ -1,18 +1,9 @@
 /* 
 
 Colour palette:
-
-
-$charcoal-brown: #28301Bff;
-$dust-grey: #DDD9D0ff;
-$olive-leaf: #485925ff;
-$dark-slate-grey: #273A32ff;
-
-$charcoal-blue: #305361ff;
-$cerulean: #4B7A89ff;
-$air-force-blue: #6C949Eff;
-
-
+#b5d398 - ljusgrön
+#008f00 - giftgrön
+fff7e1 - pergamentgul
 */
 
 .eb-garamond-font {
@@ -28,6 +19,23 @@ body {
   margin: 50px 0px 0px 0px;
   font-family: "EB Garamond", serif;
   background-color: #b5d398;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  float: right;
+}
+
+.container-two {
+  display: flex;
+  gap: 10px;
+  float: left;
+  align-items: center;
+}
+
+img {
+  margin: 0px 15px 0px 0px;
 }
 
 /* FONTS */
@@ -84,25 +92,25 @@ ul.a {
 }
 
 em {
-  color:#4B7A89ff
+  color: #0baf27;
 }
 
 a {
-  color: #4B7A89ff;
+  color: #0baf27;
 }
 
 a:link {
   text-decoration: none;
-  color: #6C949Eff;
+  color: #0baf27;
 }
 a:visited {
   text-decoration: none;
-  color: #4B7A89ff;
+  color: #0baf27;
 }
 
 a:hover {
   text-decoration: none;
-  color: #28301Bff;
+  color: #ffe51e;
 }
 
 /* REST OF PAGE */ 
@@ -120,3 +128,126 @@ a:hover {
 
 
 
+/* MEDIA QUERY */
+
+@media (min-width: 19px) and (max-width: 480px) {
+
+  .box {
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 1 v0px;
+    background-color: #fff7e1;
+  }
+
+  h1 {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    font-variant-caps: small-caps;
+    color: #008f00;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #008f00;
+    padding: 0px;
+    margin: 40px 0px 10px 0px;
+  }
+  
+  h3 {
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #0fb00f;
+  }
+
+  h4 {
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+    color: #fff7e1;
+  }
+
+  
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .box {
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: #fff7e1;
+  }
+
+  h1 {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    font-variant-caps: small-caps;
+    color: #008f00;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #008f00;
+    padding: 0px;
+    margin: 40px 0px 10px 0px;
+  }
+  
+  h3 {
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #0fb00f;
+  }
+  h4 {
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+    color: #fff7e1;
+  }
+  body {
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .box {
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 1 v0px;
+    background-color: #fff7e1;
+  }
+  body {
+    margin: 20px 0px 0px 0px;
+  }
+
+}
+
+@media (min-width: 1601px) {
+  .box {
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 1 v0px;
+    background-color: #fff7e1;
+  }
+  h4 {
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+    color: #fff7e1;
+  }
+}
